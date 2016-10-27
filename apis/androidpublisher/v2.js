@@ -66,7 +66,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}:commit',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}:commit',
           method: 'POST'
         }, options),
         params: params,
@@ -102,7 +102,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}',
           method: 'DELETE'
         }, options),
         params: params,
@@ -138,7 +138,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}',
           method: 'GET'
         }, options),
         params: params,
@@ -174,7 +174,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits',
           method: 'POST'
         }, options),
         params: params,
@@ -210,7 +210,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}:validate',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}:validate',
           method: 'POST'
         }, options),
         params: params,
@@ -250,7 +250,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/listings/{language}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/listings/{language}',
             method: 'DELETE'
           }, options),
           params: params,
@@ -287,7 +287,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/listings',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/listings',
             method: 'DELETE'
           }, options),
           params: params,
@@ -325,7 +325,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/listings/{language}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/listings/{language}',
             method: 'GET'
           }, options),
           params: params,
@@ -362,7 +362,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/listings',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/listings',
             method: 'GET'
           }, options),
           params: params,
@@ -401,7 +401,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/listings/{language}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/listings/{language}',
             method: 'PATCH'
           }, options),
           params: params,
@@ -440,7 +440,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/listings/{language}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/listings/{language}',
             method: 'PUT'
           }, options),
           params: params,
@@ -480,7 +480,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/externallyHosted',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/externallyHosted',
             method: 'POST'
           }, options),
           params: params,
@@ -516,7 +516,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks',
             method: 'GET'
           }, options),
           params: params,
@@ -555,11 +555,11 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks',
             method: 'POST'
           }, options),
           params: params,
-          mediaUrl: 'http://localhost:9999/api/upload/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks',
+          mediaUrl: 'http://localhost:9999upload/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks',
           requiredParams: ['packageName', 'editId'],
           pathParams: ['editId', 'packageName'],
           context: self
@@ -600,11 +600,11 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/deobfuscationFiles/{deobfuscationFileType}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/deobfuscationFiles/{deobfuscationFileType}',
             method: 'POST'
           }, options),
           params: params,
-          mediaUrl: 'http://localhost:9999/api/upload/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/deobfuscationFiles/{deobfuscationFileType}',
+          mediaUrl: 'http://localhost:9999upload/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/deobfuscationFiles/{deobfuscationFileType}',
           requiredParams: ['packageName', 'editId', 'apkVersionCode', 'deobfuscationFileType'],
           pathParams: ['apkVersionCode', 'deobfuscationFileType', 'editId', 'packageName'],
           context: self
@@ -640,7 +640,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/details',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/details',
             method: 'GET'
           }, options),
           params: params,
@@ -677,7 +677,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/details',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/details',
             method: 'PATCH'
           }, options),
           params: params,
@@ -714,7 +714,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/details',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/details',
             method: 'PUT'
           }, options),
           params: params,
@@ -755,7 +755,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/expansionFiles/{expansionFileType}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/expansionFiles/{expansionFileType}',
             method: 'GET'
           }, options),
           params: params,
@@ -794,7 +794,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/expansionFiles/{expansionFileType}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/expansionFiles/{expansionFileType}',
             method: 'PATCH'
           }, options),
           params: params,
@@ -833,7 +833,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/expansionFiles/{expansionFileType}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/expansionFiles/{expansionFileType}',
             method: 'PUT'
           }, options),
           params: params,
@@ -874,11 +874,11 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/expansionFiles/{expansionFileType}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/expansionFiles/{expansionFileType}',
             method: 'POST'
           }, options),
           params: params,
-          mediaUrl: 'http://localhost:9999/api/upload/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/expansionFiles/{expansionFileType}',
+          mediaUrl: 'http://localhost:9999upload/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/expansionFiles/{expansionFileType}',
           requiredParams: ['packageName', 'editId', 'apkVersionCode', 'expansionFileType'],
           pathParams: ['apkVersionCode', 'editId', 'expansionFileType', 'packageName'],
           context: self
@@ -917,7 +917,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}/{imageType}/{imageId}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}/{imageType}/{imageId}',
             method: 'DELETE'
           }, options),
           params: params,
@@ -955,7 +955,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}/{imageType}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}/{imageType}',
             method: 'DELETE'
           }, options),
           params: params,
@@ -993,7 +993,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}/{imageType}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}/{imageType}',
             method: 'GET'
           }, options),
           params: params,
@@ -1034,11 +1034,11 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}/{imageType}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}/{imageType}',
             method: 'POST'
           }, options),
           params: params,
-          mediaUrl: 'http://localhost:9999/api/upload/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}/{imageType}',
+          mediaUrl: 'http://localhost:9999upload/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}/{imageType}',
           requiredParams: ['packageName', 'editId', 'language', 'imageType'],
           pathParams: ['editId', 'imageType', 'language', 'packageName'],
           context: self
@@ -1075,7 +1075,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}',
             method: 'DELETE'
           }, options),
           params: params,
@@ -1111,7 +1111,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings',
             method: 'DELETE'
           }, options),
           params: params,
@@ -1148,7 +1148,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}',
             method: 'GET'
           }, options),
           params: params,
@@ -1184,7 +1184,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings',
             method: 'GET'
           }, options),
           params: params,
@@ -1222,7 +1222,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}',
             method: 'PATCH'
           }, options),
           params: params,
@@ -1260,7 +1260,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}',
             method: 'PUT'
           }, options),
           params: params,
@@ -1300,7 +1300,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/testers/{track}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/testers/{track}',
             method: 'GET'
           }, options),
           params: params,
@@ -1338,7 +1338,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/testers/{track}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/testers/{track}',
             method: 'PATCH'
           }, options),
           params: params,
@@ -1376,7 +1376,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/testers/{track}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/testers/{track}',
             method: 'PUT'
           }, options),
           params: params,
@@ -1416,7 +1416,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/tracks/{track}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/tracks/{track}',
             method: 'GET'
           }, options),
           params: params,
@@ -1452,7 +1452,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/tracks',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/tracks',
             method: 'GET'
           }, options),
           params: params,
@@ -1490,7 +1490,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/tracks/{track}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/tracks/{track}',
             method: 'PATCH'
           }, options),
           params: params,
@@ -1528,7 +1528,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/edits/{editId}/tracks/{track}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/edits/{editId}/tracks/{track}',
             method: 'PUT'
           }, options),
           params: params,
@@ -1571,7 +1571,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/entitlements',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/entitlements',
           method: 'GET'
         }, options),
         params: params,
@@ -1610,7 +1610,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/inappproducts/batch',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/inappproducts/batch',
           method: 'POST'
         }, options),
         params: params,
@@ -1646,7 +1646,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/inappproducts/{sku}',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/inappproducts/{sku}',
           method: 'DELETE'
         }, options),
         params: params,
@@ -1682,7 +1682,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/inappproducts/{sku}',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/inappproducts/{sku}',
           method: 'GET'
         }, options),
         params: params,
@@ -1719,7 +1719,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/inappproducts',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/inappproducts',
           method: 'POST'
         }, options),
         params: params,
@@ -1757,7 +1757,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/inappproducts',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/inappproducts',
           method: 'GET'
         }, options),
         params: params,
@@ -1795,7 +1795,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/inappproducts/{sku}',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/inappproducts/{sku}',
           method: 'PATCH'
         }, options),
         params: params,
@@ -1833,7 +1833,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/inappproducts/{sku}',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/inappproducts/{sku}',
           method: 'PUT'
         }, options),
         params: params,
@@ -1876,7 +1876,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/purchases/products/{productId}/tokens/{token}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/purchases/products/{productId}/tokens/{token}',
             method: 'GET'
           }, options),
           params: params,
@@ -1916,7 +1916,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/purchases/subscriptions/{subscriptionId}/tokens/{token}:cancel',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/purchases/subscriptions/{subscriptionId}/tokens/{token}:cancel',
             method: 'POST'
           }, options),
           params: params,
@@ -1954,7 +1954,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/purchases/subscriptions/{subscriptionId}/tokens/{token}:defer',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/purchases/subscriptions/{subscriptionId}/tokens/{token}:defer',
             method: 'POST'
           }, options),
           params: params,
@@ -1991,7 +1991,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/purchases/subscriptions/{subscriptionId}/tokens/{token}',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/purchases/subscriptions/{subscriptionId}/tokens/{token}',
             method: 'GET'
           }, options),
           params: params,
@@ -2028,7 +2028,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/purchases/subscriptions/{subscriptionId}/tokens/{token}:refund',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/purchases/subscriptions/{subscriptionId}/tokens/{token}:refund',
             method: 'POST'
           }, options),
           params: params,
@@ -2065,7 +2065,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
         var parameters = {
           options: utils.extend({
-            url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/purchases/subscriptions/{subscriptionId}/tokens/{token}:revoke',
+            url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/purchases/subscriptions/{subscriptionId}/tokens/{token}:revoke',
             method: 'POST'
           }, options),
           params: params,
@@ -2105,7 +2105,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/reviews/{reviewId}',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/reviews/{reviewId}',
           method: 'GET'
         }, options),
         params: params,
@@ -2143,7 +2143,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/reviews',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/reviews',
           method: 'GET'
         }, options),
         params: params,
@@ -2180,7 +2180,7 @@ function Androidpublisher(options) { // eslint-disable-line
 
       var parameters = {
         options: utils.extend({
-          url: 'http://localhost:9999/api/androidpublisher/v2/applications/{packageName}/reviews/{reviewId}:reply',
+          url: 'http://localhost:9999/androidpublisher/v2/applications/{packageName}/reviews/{reviewId}:reply',
           method: 'POST'
         }, options),
         params: params,
