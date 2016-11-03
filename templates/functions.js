@@ -17,10 +17,12 @@ import type {
 } from './{{ Name}}Types';
 {% endif %}
 
+const paramValidators = {};
+
 {% if resources %}
 {% for rname, r in resources %}
 {% for mname, m in r.methods -%}
-export const extract{{ m.id|idToCamelCase }}FromRequest = (
+paramValidators['{{ m.id }}'] = (
   pathParams: {{ m.id|idToCamelCase }}PathParams,
   body: {{ m.id|idToCamelCase }}Params,
 ): {{ m.id|idToCamelCase }}Params => {
@@ -30,8 +32,8 @@ export const extract{{ m.id|idToCamelCase }}FromRequest = (
   };
   {%- for pname, p in m.parameters -%}
   {%- if p.required -%}
-  if (combined['{{ pname }}'] === undefined || combined['{{ pname }}'] === null) {
-    throw new Error('{{ pname }} is required but is not specified.');
+  if (combined.{{ pname|getSafeParamName }} === undefined || combined.{{ pname|getSafeParamName }} === null) {
+    throw new Error('{{ pname|getSafeParamName }} is required but is not specified.');
   }
   {%- endif -%}
   {%- endfor -%}
@@ -41,33 +43,6 @@ export const extract{{ m.id|idToCamelCase }}FromRequest = (
 {%- endfor -%}
 {%- endfor -%}
 
-export type MappingResult = {
-  function: string,
-  params: {[key: string]: string},
-}
-
-export const mapPath = (path: string | String, method: string | String): ?MappingResult => {
-  let matches = null;
-  {% for rname, r in resources %}
-  {% for mname, m in r.methods -%}
-  if (method === '{{ m.httpMethod }}') {
-    matches = path.match({{ (servicePath + m.path)|buildurl|regexify }});
-    if (matches) {
-      return {
-        function: '{{ m.id }}',
-        params: {
-          {%- set pathParams = m.parameterOrder -%}
-          {%- for i, param in pathParams -%}
-          {%- set ii = i+1 -%}
-          {{ param }}: matches[{{ ii }}],
-          {%- endfor -%}
-        },
-      };
-    }
-  }
-  {% endfor %}
-  {% endfor %}
-  return null;
-};
+export default paramValidators;
 
 {%- endif -%}
