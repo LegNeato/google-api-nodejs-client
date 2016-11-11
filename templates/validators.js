@@ -17,7 +17,20 @@ import type {
 } from './{{ Name}}Types';
 {% endif %}
 
-const paramValidators = {};
+type allParamsTypes =
+{% for rname, r in resources -%}
+{% for mname, m in r.methods -%}
+  | {{ m.id|idToCamelCase }}Params
+{% endfor -%}
+{% endfor -%}
+;
+
+export type ShimValidator = (
+  pathParams: any,
+  bodyParams: any,
+) => allParamsTypes;
+
+const paramValidators: { [key: string]: ShimValidator } = {};
 
 {% if resources %}
 {% for rname, r in resources %}
