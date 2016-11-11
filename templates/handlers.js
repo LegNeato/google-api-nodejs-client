@@ -15,7 +15,7 @@ import type {
 } from 'express-http-proxy';
 
 export type ShimHandler = (
-  googleResponse:$ ProxyResponse, // Response from Google.
+  googleResponse: $ProxyResponse, // Response from Google.
   googleData: Object, // Response data from Google. Handlers cast to specific type.
   requestToPocketship: $Request, // Original request to pocketship from client.
   responseFromPocketship: $Response, // Response Pocketship is sending back to client.
@@ -25,13 +25,9 @@ export type ShimHandler = (
 const handlers: { [key: string]: ShimHandler } = {};
 
 {% if resources %}
-{% for rname, r in resources -%}
-{% for mname, m in r.methods -%}
-// import {{ m.id|idToCamelCase }} from './handlers/{{ m.id|idToPath }}';
-// handlers['{{ m.id }}'] = {{ m.id|idToCamelCase }};
-
-{% endfor -%}
-{% endfor -%}
-{% endif %}
+{% for rname, r in resources %}
+  {%- include "./handler-partial.js" with r -%}
+{%- endfor -%}
+{%- endif %}
 
 export default handlers;
