@@ -11,11 +11,11 @@ import type {
   $Response,
 } from 'express';
 import type {
-  ProxyResponse,
+  $ProxyResponse,
 } from 'express-http-proxy';
 
 export type ShimHandler = (
-  googleResponse: ProxyResponse, // Response from Google.
+  googleResponse:$ ProxyResponse, // Response from Google.
   googleData: Object, // Response data from Google. Handlers cast to specific type.
   requestToPocketship: $Request, // Original request to pocketship from client.
   responseFromPocketship: $Response, // Response Pocketship is sending back to client.

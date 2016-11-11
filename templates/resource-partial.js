@@ -2,13 +2,9 @@
 {% for mname, m in methods -%}
   {% include "./method-partial.js" with m %}
 {%- endfor -%}
-{%- endif -%}{%- if r.methods && r.resources -%},{%- endif -%}
-
+{%- endif -%}
 {% if r.resources %}
-{%- for rname, r in resources %}
-
-  {{ rname }}: {
-    {%- include "./resource-partial.js" with r -%}
-  }{%- if not loop.last -%},{%- endif -%}
+{% for rname, r in resources %}
+  {%- include "./resource-partial.js" with r -%}
 {%- endfor -%}
 {%- endif -%}
