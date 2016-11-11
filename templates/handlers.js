@@ -26,6 +26,9 @@ const handlers: { [key: string]: ShimHandler } = {};
 
 {% if resources %}
 {% for rname, r in resources %}
+  /**
+   * {{ rname|capitalize }}
+   */
   {%- include "./handler-partial.js" with r -%}
 {%- endfor -%}
 {%- endif %}
