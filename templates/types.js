@@ -24,9 +24,9 @@ export type {{ Name }}{{ schema.id }} = {
   {%- endif -%}
   {% if p.description and p.description|hasNewline %}
     {% set shortDesc = undefined %}
-    {% set longDesc = p.description|convertNewline('\n   * ')|cleanComments|safe %}
+    {% set longDesc = p.description|convertNewline('\n   * ')|cleanComments|safe|htmlEntityDecode %}
   {% elif p.description %}
-    {% set shortDesc = p.description|trim %}
+    {% set shortDesc = p.description|trim|htmlEntityDecode %}
     {% set longDesc = undefined %}
   {% else %}
     {% set shortDesc = undefined %}
@@ -38,15 +38,15 @@ export type {{ Name }}{{ schema.id }} = {
    */
   {%- endif -%}
   {%- if p.$ref -%}
-  {{ pname }}: {{ nullable }}{{ Name }}{{ p.$ref }},{% if shortDesc %} // {{ shortDesc }} {% endif %}
+  {{ pname }}: {{ nullable }}{{ Name }}{{ p.$ref }},{% if shortDesc %} // {{ shortDesc|htmlEntityDecode }} {% endif %}
   {%- elif p.items and p.items.type -%}
-  {{ pname }}: Array<{{ nullable }}{{ p.items.type|mapType }}>,{% if shortDesc %} // {{ shortDesc }} {% endif %}
+  {{ pname }}: Array<{{ nullable }}{{ p.items.type|mapType }}>,{% if shortDesc %} // {{ shortDesc|htmlEntityDecode }} {% endif %}
   {%- elif p.items and p.items.$ref -%}
-  {{ pname }}: Array<{{ nullable }}{{ Name }}{{ p.items.$ref }}>,{% if shortDesc %} // {{ shortDesc }} {% endif %}
+  {{ pname }}: Array<{{ nullable }}{{ Name }}{{ p.items.$ref }}>,{% if shortDesc %} // {{ shortDesc|htmlEntityDecode }} {% endif %}
   {%- elif fixedValue -%}
-  {{ pname }}: {{ nullable }}'{{ fixedValue }}',{% if shortDesc %} // {{ shortDesc }} {% endif %}
+  {{ pname }}: {{ nullable }}'{{ fixedValue }}',{% if shortDesc %} // {{ shortDesc|htmlEntityDecode }} {% endif %}
   {%- else -%}
-  {{ pname }}: {{ nullable }}{{ p.type|mapType }},{% if shortDesc %} // {{ shortDesc }} {% endif %}
+  {{ pname }}: {{ nullable }}{{ p.type|mapType }},{% if shortDesc %} // {{ shortDesc|htmlEntityDecode }} {% endif %}
   {%- endif -%}
   {%- endfor -%}
   {%- endif -%}
@@ -56,22 +56,6 @@ export type {{ Name }}{{ schema.id }} = {
 {% if resources %}
 
 {% for rname, r in resources %}
-{% for mname, m in r.methods -%}
-export type {{ m.id|idToCamelCase }}PathParams = {
-{%- set pathParams = m.parameterOrder -%}
-{%- for i, param in pathParams -%}
-  {%- set ii = i+1 -%}
-  {{ param }}: string,
+  {%- include "./paramtypes-partial.js" with r -%}
 {%- endfor -%}
-};
-
-{% endfor %}
-{% endfor %}
-
-{% for rname, r in resources %}
-{% for mname, m in r.methods -%}
-export type {{ m.id|idToCamelCase }}Params = {
-{% for pname, p in m.parameters -%}
-  {{ pname }}{% if ! p.required %}?{% endif %}: {{ p.type|mapType }}, {% if p.description %}// {{ p.description|oneLine|cleanComments|safe }}{% endif %}
-{%- endfor -%}
-};
+{%- endif -%}
